@@ -1,0 +1,2513 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>CORSAIR • Join the Light — Visual Brand Kit</title>
+  <style>
+    :root {
+  --accent-yellow: #FFCC00;
+  --bg-alt: #F7F7FA;
+  --bg-primary: #FFFFFF;
+  --border-chart-axes: 1px solid #C4C4CC;
+  --border-hairline: 1px solid #E0E0E5;
+  --border-strong: 2px solid #C4C4CC;
+  --border-subtle: #E0E0E5;
+  --border-table-grid: 1px solid #E0E0E5;
+  --btn-primary-bg: #FFCC00;
+  --btn-primary-text: #111111;
+  --btn-secondary-bg: #FFFFFF;
+  --btn-secondary-border: 1px solid #C4C4CC;
+  --btn-secondary-text: #111111;
+  --card-bg: #FFFFFF;
+  --card-border: 1px solid #E0E0E5;
+  --chip-bg: #111111;
+  --chip-pill-bg: #111111;
+  --chip-text: #FFFFFF;
+  --dv-heat-high: #FFCC00;
+  --dv-heat-low: #F7F7FA;
+  --dv-heat-mid: #8C4BFF;
+  --dv-highlight: #FFCC00;
+  --dv-muted-1: #C4C4CC;
+  --dv-muted-2: #E0E0E5;
+  --dv-neutral-1: #111111;
+  --dv-neutral-2: #444444;
+  --dv-neutral-3: #777777;
+  --focus-outline-color: #FFCC00;
+  --focus-outline-offset: 3px;
+  --focus-outline-width: 2px;
+  --font-body: Inter, Calibri, system-ui;
+  --font-heading: Poppins, "Helvetica Neue", system-ui;
+  --font-mono: Consolas, "SF Mono", monospace;
+  --fs-body-lg: 24px;
+  --fs-body-md: 21px;
+  --fs-body-sm: 19px;
+  --fs-caption: 16px;
+  --fs-display: 59px;
+  --fs-h1: 48px;
+  --fs-h2: 37px;
+  --fs-h3: 32px;
+  --fs-h4: 27px;
+  --fs-label: 15px;
+  --fw-body-lg: 400;
+  --fw-body-md: 400;
+  --fw-body-sm: 400;
+  --fw-caption: 400;
+  --fw-display: 700;
+  --fw-h1: 700;
+  --fw-h2: 600;
+  --fw-h3: 600;
+  --fw-h4: 500;
+  --fw-label: 600;
+  --grad-angle: 135deg;
+  --grad-stop-1: #3874FF;
+  --grad-stop-2: #8C4BFF;
+  --grad-stop-3: #FFCC00;
+  --grid-columns: 12;
+  --grid-gutter: 24px;
+  --grid-max: 1200px;
+  --hover-lift: 2px;
+  --lh-body-lg: 1.4;
+  --lh-body-md: 1.4;
+  --lh-body-sm: 1.4;
+  --lh-caption: 1.3;
+  --lh-label: 1.2;
+  --ls-label: 0.08em;
+  --radius-button: 999px;
+  --radius-card: 16px;
+  --radius-chart: 12px;
+  --radius-chip: 999px;
+  --radius-panel: 16px;
+  --shadow-0: none;
+  --shadow-1: 0px 4px 12px rgba(0,0,0,0.06);
+  --shadow-2: 0px 10px 30px rgba(0,0,0,0.12);
+  --space-lg: 24px;
+  --space-md: 16px;
+  --space-sm: 8px;
+  --space-unit: 8px;
+  --space-xl: 32px;
+  --space-xs: 4px;
+  --space-xxl: 48px;
+  --surface: #FFFFFF;
+  --surface-elevated: #F7F7FA;
+  --surface-highlight: #FFF8E0;
+  --table-even-bg: #FAFAFC;
+  --table-header-bg: #F7F7FA;
+  --table-odd-bg: #FFFFFF;
+  --text-alternate: #222222;
+  --text-disabled: #A0A0A0;
+  --text-muted: #666666;
+  --text-primary: #111111;
+}
+
+    /* ---------- Base ---------- */
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      background: var(--bg-alt);
+      color: var(--text-primary);
+      font-family: var(--font-body);
+      line-height: 1.45;
+    }
+    a { color: inherit; }
+    .app {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      min-height: 100vh;
+    }
+
+    /* ---------- Sidebar ---------- */
+    .sidebar {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      background: var(--bg-primary);
+      border-right: var(--border-hairline);
+      padding: 20px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .brandmark {
+      padding: 12px 12px 14px 12px;
+      border: var(--border-hairline);
+      border-radius: var(--radius-panel);
+      background: linear-gradient(var(--bg-primary), var(--bg-primary)) padding-box,
+                  linear-gradient(var(--grad-angle), var(--grad-stop-1), var(--grad-stop-2), var(--grad-stop-3)) border-box;
+      border: 1px solid transparent;
+    }
+    .brandmark .logo {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      font-size: 18px;
+    }
+    .brandmark .sub {
+      margin-top: 4px;
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    .nav {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      padding: 6px 0;
+      overflow: auto;
+    }
+    .nav a {
+      text-decoration: none;
+      padding: 10px 10px;
+      border-radius: 12px;
+      border: 1px solid transparent;
+      font-size: 14px;
+      color: var(--text-alt);
+    }
+    .nav a:hover {
+      background: var(--bg-alt);
+      border-color: var(--border-subtle);
+    }
+    .nav a.active {
+      background: var(--surface-highlight);
+      border-color: var(--accent-yellow);
+      color: var(--text-primary);
+      font-weight: 600;
+    }
+
+    .sidebar-footer {
+      margin-top: auto;
+      display: grid;
+      gap: 10px;
+    }
+    .hint {
+      font-size: 12px;
+      color: var(--text-muted);
+      padding: 0 4px;
+    }
+
+    /* ---------- Main ---------- */
+    .main {
+      padding: 22px 24px 40px 24px;
+      display: grid;
+      grid-template-rows: auto 1fr;
+      gap: 16px;
+      min-width: 0;
+    }
+    .topbar {
+      background: var(--bg-primary);
+      border: var(--border-hairline);
+      border-radius: var(--radius-panel);
+      padding: 14px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      box-shadow: var(--shadow-0);
+    }
+    .crumb {
+      font-family: var(--font-heading);
+      font-weight: 600;
+    }
+    .top-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    /* ---------- Page sections ---------- */
+    .page {
+      display: none;
+      background: var(--bg-primary);
+      border: var(--border-hairline);
+      border-radius: var(--radius-panel);
+      padding: 18px 18px 22px 18px;
+      box-shadow: var(--shadow-0);
+      min-width: 0;
+    }
+    .page.active { display: block; }
+
+    /* ---------- Type styles ---------- */
+    .display { font-family: var(--font-heading); font-size: var(--fs-display); font-weight: var(--fw-display); line-height: 1.1; margin: 0; }
+    .h1 { font-family: var(--font-heading); font-size: var(--fs-h1); font-weight: var(--fw-h1); line-height: 1.15; margin: 0; }
+    .h2 { font-family: var(--font-heading); font-size: var(--fs-h2); font-weight: var(--fw-h2); line-height: 1.2; margin: 0; }
+    .h3 { font-family: var(--font-heading); font-size: var(--fs-h3); font-weight: var(--fw-h3); line-height: 1.25; margin: 0; }
+    .h4 { font-family: var(--font-heading); font-size: var(--fs-h4); font-weight: var(--fw-h4); line-height: 1.3; margin: 0; }
+    .body-lg { font-size: var(--fs-body-lg); font-weight: var(--fw-body-lg); line-height: var(--lh-body-lg); }
+    .body-md { font-size: var(--fs-body-md); font-weight: var(--fw-body-md); line-height: var(--lh-body-md); }
+    .body-sm { font-size: var(--fs-body-sm); font-weight: var(--fw-body-sm); line-height: var(--lh-body-sm); }
+    .caption { font-size: var(--fs-caption); font-weight: var(--fw-caption); line-height: var(--lh-caption); color: var(--text-muted); }
+    .label {
+      font-family: var(--font-heading);
+      font-size: var(--fs-label);
+      font-weight: var(--fw-label);
+      line-height: var(--lh-label);
+      letter-spacing: var(--ls-label);
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+
+    /* ---------- Components ---------- */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      border-radius: var(--radius-button);
+      padding: 10px 18px;
+      border: 1px solid transparent;
+      font-family: var(--font-heading);
+      font-weight: 600;
+      font-size: 14px;
+      cursor: pointer;
+      user-select: none;
+      transition: transform 120ms ease, box-shadow 120ms ease, filter 120ms ease, background 120ms ease, border-color 120ms ease;
+      text-decoration: none;
+    }
+    .btn:focus-visible {
+      outline: var(--focus-outline-width) solid var(--focus-outline-color);
+      outline-offset: var(--focus-outline-offset);
+    }
+    .btn-primary {
+      background: var(--btn-primary-bg);
+      color: var(--btn-primary-text);
+      box-shadow: var(--shadow-1);
+    }
+    .btn-primary:hover { filter: brightness(0.9); }
+    .btn-primary:active { transform: translateY(1px); box-shadow: var(--shadow-0); }
+    .btn-secondary {
+      background: var(--btn-secondary-bg);
+      color: var(--btn-secondary-text);
+      border: var(--btn-secondary-border);
+      box-shadow: var(--shadow-0);
+      font-weight: 500;
+    }
+    .btn-secondary:hover { background: var(--bg-alt); }
+    .btn-ghost {
+      background: transparent;
+      color: var(--text-primary);
+      border: 1px solid transparent;
+      font-weight: 500;
+    }
+    .btn-ghost:hover { background: var(--bg-alt); border-color: var(--border-subtle); }
+
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border-radius: var(--radius-chip);
+      padding: 6px 12px;
+      font-size: 12px;
+      letter-spacing: var(--ls-label);
+      text-transform: uppercase;
+      font-family: var(--font-heading);
+      font-weight: 600;
+      background: var(--chip-bg);
+      color: var(--chip-text);
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border-radius: 999px;
+      padding: 6px 12px;
+      font-size: 12px;
+      border: 1px solid var(--border-subtle);
+      background: var(--bg-primary);
+      color: var(--text-primary);
+    }
+    .badge.success { border-color: #3BA55C; color: #3BA55C; }
+    .badge.warning { border-color: var(--accent-yellow); color: #8A6A00; }
+    .badge.error { border-color: #FF4B4B; color: #B00020; }
+
+    .card {
+      background: var(--card-bg);
+      border: var(--card-border);
+      border-radius: var(--radius-card);
+      padding: 18px;
+      box-shadow: var(--shadow-1);
+      transition: transform 120ms ease, box-shadow 120ms ease;
+    }
+    .card.hoverable:hover {
+      transform: translateY(calc(var(--hover-lift) * -1));
+      box-shadow: var(--shadow-2);
+    }
+    .card-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 10px;
+    }
+    .kpi {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 34px;
+      line-height: 1;
+      margin: 4px 0 0 0;
+    }
+    .muted { color: var(--text-muted); }
+
+    /* ---------- Layout helpers ---------- */
+    .grid {
+      display: grid;
+      gap: 14px;
+    }
+    .grid.two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .grid.three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .grid.four { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    @media (max-width: 980px) {
+      .app { grid-template-columns: 1fr; }
+      .sidebar { position: relative; height: auto; }
+      .grid.two, .grid.three, .grid.four { grid-template-columns: 1fr; }
+    }
+
+    .section-title {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 10px;
+      margin: 4px 0 12px 0;
+      padding-bottom: 10px;
+      border-bottom: var(--border-hairline);
+    }
+
+    /* ---------- Color swatches ---------- */
+    .swatches { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+    @media (max-width: 980px) { .swatches { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    .swatch {
+      border-radius: 14px;
+      overflow: hidden;
+      border: var(--border-hairline);
+      background: var(--bg-primary);
+      box-shadow: var(--shadow-0);
+    }
+    .swatch .chipbar {
+      height: 60px;
+      border-bottom: var(--border-hairline);
+    }
+    .swatch .meta {
+      padding: 10px 12px 12px 12px;
+    }
+    .swatch .name { font-family: var(--font-heading); font-weight: 600; font-size: 13px; }
+    .swatch .hex { font-family: var(--font-mono); font-size: 12px; color: var(--text-muted); margin-top: 4px; }
+
+    /* ---------- Tables ---------- */
+    table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      overflow: hidden;
+      border-radius: 14px;
+      border: var(--border-hairline);
+    }
+    thead th {
+      background: var(--table-header-bg);
+      text-align: left;
+      font-family: var(--font-heading);
+      font-weight: 600;
+      font-size: 13px;
+      padding: 12px;
+      border-bottom: var(--border-hairline);
+    }
+    tbody td {
+      padding: 12px;
+      border-bottom: var(--border-hairline);
+      font-size: 14px;
+    }
+    tbody tr:nth-child(odd) td { background: var(--table-odd-bg); }
+    tbody tr:nth-child(even) td { background: var(--table-even-bg); }
+    tbody tr:last-child td { border-bottom: none; }
+    td.num { text-align: right; font-variant-numeric: tabular-nums; }
+
+    /* ---------- Code blocks ---------- */
+    pre {
+      background: var(--bg-alt);
+      border: var(--border-hairline);
+      border-radius: 12px;
+      padding: 14px;
+      overflow: auto;
+      font-family: var(--font-mono);
+      font-size: 12px;
+      line-height: 1.5;
+    }
+
+    /* ---------- Mini mockups ---------- */
+    .mock {
+      border-radius: var(--radius-panel);
+      border: var(--border-hairline);
+      background: var(--bg-primary);
+      overflow: hidden;
+      box-shadow: var(--shadow-1);
+    }
+    .mock .mock-top {
+      height: 10px;
+      background: linear-gradient(var(--grad-angle), var(--grad-stop-1), var(--grad-stop-2), var(--grad-stop-3));
+    }
+    .mock .mock-body {
+      padding: 16px;
+    }
+    .mock.hero {
+      position: relative;
+      min-height: 220px;
+    }
+    .glow {
+      position: absolute;
+      inset: -40px -40px auto auto;
+      width: 240px;
+      height: 240px;
+      background: radial-gradient(circle at 30% 30%, rgba(56,116,255,0.22), rgba(140,75,255,0.18), rgba(255,204,0,0.16), transparent 65%);
+      filter: blur(0px);
+      pointer-events: none;
+    }
+
+    .divider { height: 1px; background: var(--border-subtle); margin: 14px 0; }
+
+    /* ---------- Chart containers ---------- */
+    .chart-card {
+      border-radius: var(--radius-chart);
+      border: var(--border-hairline);
+      padding: 14px;
+      background: var(--bg-primary);
+      box-shadow: var(--shadow-0);
+      overflow: hidden;
+    }
+    .chart-title {
+      font-family: var(--font-heading);
+      font-weight: 600;
+      font-size: 14px;
+      margin: 0 0 10px 0;
+    }
+    .legend {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-top: 10px;
+    }
+    .legend .key {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 999px;
+      background: var(--dv-neutral-1);
+      border: 1px solid var(--border-subtle);
+    }
+
+    /* ---------- Grid visual ---------- */
+    .grid-demo {
+      border-radius: 14px;
+      border: var(--border-hairline);
+      background: var(--bg-primary);
+      overflow: hidden;
+    }
+    .grid-demo .grid-head {
+      padding: 12px 14px;
+      border-bottom: var(--border-hairline);
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      align-items: center;
+    }
+    .grid-demo .columns {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 10px;
+      padding: 14px;
+      background: var(--bg-alt);
+    }
+    .grid-demo .columns > div {
+      height: 90px;
+      border-radius: 10px;
+      border: var(--border-hairline);
+      background: rgba(255, 204, 0, 0.12);
+    }
+
+    /* ---------- Accessibility widget ---------- */
+    .contrast-tool {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      align-items: start;
+    }
+    @media (max-width: 980px) {
+      .contrast-tool { grid-template-columns: 1fr; }
+    }
+    .contrast-sample {
+      border-radius: 14px;
+      border: var(--border-hairline);
+      padding: 16px;
+      min-height: 160px;
+    }
+    .contrast-result {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: var(--border-hairline);
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      padding: 6px 12px;
+      border-radius: 999px;
+      border: var(--border-hairline);
+      background: var(--bg-alt);
+      font-family: var(--font-heading);
+      font-weight: 600;
+      font-size: 12px;
+      color: var(--text-alt);
+    }
+    .pill.pass { border-color: #3BA55C; color: #1F6B33; background: rgba(59,165,92,0.12); }
+    .pill.fail { border-color: #FF4B4B; color: #8A1D1D; background: rgba(255,75,75,0.12); }
+
+    /* ---------- Print ---------- */
+    @media print {
+      .sidebar, .topbar { display: none !important; }
+      .app { grid-template-columns: 1fr; }
+      .page { display: block; break-inside: avoid; margin-bottom: 14px; }
+    }
+  </style>
+</head>
+
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <div class="brandmark">
+      <div class="logo">CORSAIR</div>
+      <div class="sub">Join the Light • Visual Kit v1.0</div>
+    </div>
+
+    <nav class="nav" id="nav">
+      <a href="#overview" data-route="overview">Overview</a>
+      <a href="#colors" data-route="colors">Color</a>
+      <a href="#typography" data-route="typography">Typography</a>
+      <a href="#spacing" data-route="spacing">Spacing & Grid</a>
+      <a href="#elevation" data-route="elevation">Elevation, Borders</a>
+      <a href="#components" data-route="components">Components</a>
+      <a href="#tables" data-route="tables">Tables</a>
+      <a href="#charts" data-route="charts">Charts</a>
+      <a href="#widgets" data-route="widgets">Widgets</a>
+      <a href="#layouts" data-route="layouts">Layouts</a>
+      <a href="#interactions" data-route="interactions">States & Interactions</a>
+      <a href="#accessibility" data-route="accessibility">Accessibility</a>
+      <a href="#json" data-route="json">Raw JSON</a>
+    </nav>
+
+    <div class="sidebar-footer">
+      <button class="btn btn-secondary" id="copyCssBtn" type="button">Copy CSS variables</button>
+      <button class="btn btn-secondary" id="copyJsonBtn" type="button">Copy JSON</button>
+      <div class="hint">Single file. Open in any browser. No installs.</div>
+      <div class="hint">Generated: 2026-02-11 21:29:28</div>
+    </div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <div class="crumb" id="crumb">Overview</div>
+      <div class="top-actions">
+        <a class="btn btn-ghost" href="#json">View JSON</a>
+        <a class="btn btn-primary" href="#overview">Start</a>
+      </div>
+    </header>
+
+    <!-- OVERVIEW -->
+    <section class="page" data-route="overview">
+      <div class="section-title">
+        <div>
+          <p class="label">Visual brand kit</p>
+          <h1 class="h2">CORSAIR • Join the Light</h1>
+          <p class="body-md muted" style="max-width: 70ch; margin: 8px 0 0 0;">
+            This is a visual-only reference. It shows the look, layout patterns, and reusable UI pieces
+            so every deliverable stays coherent across slides, dashboards, emails, social, and PDFs.
+          </p>
+        </div>
+        <div style="display:flex; gap:10px; align-items:flex-start; flex-wrap:wrap; justify-content:flex-end;">
+          <span class="chip"># Createwithcorsair</span>
+          <span class="badge warning">Accent: use sparingly</span>
+          <span class="badge success">Light backgrounds</span>
+        </div>
+      </div>
+
+      <div class="grid two">
+        <div class="mock hero">
+          <div class="mock-top"></div>
+          <div class="glow"></div>
+          <div class="mock-body">
+            <p class="label">Hero panel mock</p>
+            <h2 class="h2" style="margin-top:6px;">Join the Light</h2>
+            <p class="body-md muted" style="max-width: 56ch;">One clean system. One glow. No chaos.</p>
+            <div style="display:flex; gap:10px; margin-top:14px; flex-wrap:wrap;">
+              <a class="btn btn-primary" href="#components">Primary CTA</a>
+              <a class="btn btn-secondary" href="#components">Secondary</a>
+              <a class="btn btn-ghost" href="#components">Ghost</a>
+            </div>
+            <div class="divider"></div>
+            <div class="grid three">
+              <div class="card" style="box-shadow: var(--shadow-0);">
+                <p class="label">KPI</p>
+                <div class="kpi">+12%</div>
+                <p class="caption">Example lift card style</p>
+              </div>
+              <div class="card" style="box-shadow: var(--shadow-0);">
+                <p class="label">KPI</p>
+                <div class="kpi">1 brain</div>
+                <p class="caption">Use short, bold values</p>
+              </div>
+              <div class="card" style="box-shadow: var(--shadow-0);">
+                <p class="label">KPI</p>
+                <div class="kpi">4 channels</div>
+                <p class="caption">Keep hierarchy clear</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mock">
+          <div class="mock-top"></div>
+          <div class="mock-body">
+            <p class="label">End card mock</p>
+            <div style="display:flex; align-items:center; justify-content:space-between; gap:10px;">
+              <div style="font-family: var(--font-heading); font-weight:700;">CORSAIR</div>
+              <span class="chip"># Createwithcorsair</span>
+            </div>
+            <div style="margin-top:18px; text-align:center;">
+              <div class="h2" style="margin:0;">Join the Light</div>
+              <div class="body-md muted" style="margin-top:8px;">Build your setup. Sync your style.</div>
+              <div style="margin-top:16px; display:flex; justify-content:center;">
+                <span class="btn btn-primary" role="button" aria-label="Call to action">Explore</span>
+              </div>
+              <div class="caption" style="margin-top:20px; color: var(--text-muted);">corsair.com/icue</div>
+            </div>
+            <div class="divider"></div>
+            <p class="body-sm muted" style="margin:0;">
+              Pages in this file show the exact tokens (colors, type, spacing), plus example widgets
+              (charts, tables, cards) you can reuse.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COLORS -->
+    <section class="page" data-route="colors">
+      <div class="section-title">
+        <div>
+          <p class="label">Foundations</p>
+          <h2 class="h2">Color</h2>
+          <p class="body-md muted" style="max-width: 70ch; margin: 8px 0 0 0;">
+            Keep pages mostly neutral. Use the yellow only for the single most important emphasis
+            (CTA, key number, primary highlight). Gradient is allowed for hero-only accents.
+          </p>
+        </div>
+        <div>
+          <button class="btn btn-secondary" type="button" id="copyPaletteBtn">Copy palette JSON</button>
+        </div>
+      </div>
+
+      <div class="grid two">
+        <div class="card" style="box-shadow: var(--shadow-0);">
+          <p class="label">Primary gradient</p>
+          <div style="height: 90px; border-radius: 14px; border: var(--border-hairline); background: linear-gradient(var(--grad-angle), var(--grad-stop-1), var(--grad-stop-2), var(--grad-stop-3));"></div>
+          <p class="caption" style="margin-top:10px;">Use for hero strips, end-cards, hover accents. Avoid for body text backgrounds.</p>
+        </div>
+        <div class="card" style="box-shadow: var(--shadow-0);">
+          <p class="label">Accent usage</p>
+          <div id="accentUsageList" class="body-md"></div>
+          <div class="divider"></div>
+          <div style="display:flex; gap:10px; flex-wrap:wrap;">
+            <span class="badge warning">Avoid full RGB rainbow</span>
+            <span class="badge success">Allow hero-only dark</span>
+            <span class="badge">Charts: highlight only</span>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top: 16px;">
+        <p class="label">Swatches</p>
+        <div class="swatches" id="swatches"></div>
+      </div>
+    </section>
+
+    <!-- TYPOGRAPHY -->
+    <section class="page" data-route="typography">
+      <div class="section-title">
+        <div>
+          <p class="label">Foundations</p>
+          <h2 class="h2">Typography</h2>
+          <p class="body-md muted" style="max-width: 70ch; margin: 8px 0 0 0;">
+            This file uses system font fallbacks. If Poppins/Inter are installed, you’ll see them. If not, the hierarchy stays the same.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid two">
+        <div class="card" style="box-shadow: var(--shadow-0);">
+          <p class="label">Font families</p>
+          <div class="body-md">
+            <div><strong>Heading:</strong> <span style="font-family: var(--font-heading);">Poppins, Helvetica Neue, system-ui</span></div>
+            <div style="margin-top:8px;"><strong>Body:</strong> <span style="font-family: var(--font-body);">Inter, Calibri, system-ui</span></div>
+            <div style="margin-top:8px;"><strong>Mono:</strong> <span style="font-family: var(--font-mono);">Consolas, SF Mono, monospace</span></div>
+          </div>
+          <div class="divider"></div>
+          <p class="caption" style="margin:0;">Headings: sentence case. Avoid all-caps for long phrases.</p>
+        </div>
+
+        <div class="card" style="box-shadow: var(--shadow-0);">
+          <p class="label">Code snippet style</p>
+          <pre><code>/* Example token usage */
+.button-primary {
+  background: var(--accent-yellow);
+  color: var(--text-primary);
+  border-radius: var(--radius-button);
+}</code></pre>
+          <p class="caption" style="margin:0;">Use mono only for specs, code, and small tables.</p>
+        </div>
+      </div>
+
+      <div style="margin-top:16px;">
+        <p class="label">Type scale preview</p>
+        <div class="grid two" id="typeScale"></div>
+      </div>
+    </section>
+
+    <!-- SPACING & GRID -->
+    <section class="page" data-route="spacing">
+      <div class="section-title">
+        <div>
+          <p class="label">Foundations</p>
+          <h2 class="h2">Spacing & Grid</h2>
+          <p class="body-md muted" style="max-width: 70ch; margin: 8px 0 0 0;">
+            Everything snaps to an 8px unit. Layouts should feel clean, left-aligned, and consistent. Avoid crowding.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid two">
+        <div class="card" style="box-shadow: var(--shadow-0);">
+          <p class="label">Spacing scale</p>
+          <div id="spacingScale"></div>
+          <div class="divider"></div>
+          <p class="caption" style="margin:0;">Use section gaps to create breathing room. Don’t “tight-pack” charts and text.</p>
+        </div>
+
+        <div class="grid-demo">
+          <div class="grid-head">
+            <div>
+              <div class="label">12-column desktop grid</div>
+              <div class="caption">Illustration of alignment and gutters</div>
+            </div>
+            <span class="badge">Max width: 1200px</span>
+          </div>
+          <div class="columns" aria-label="Grid columns">
+            <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top:16px;" class="card" style="box-shadow: var(--shadow-0);">
+        <p class="label">Alignment rules</p>
+        <ul class="body-md" id="alignmentRules" style="margin: 10px 0 0 18px;"></ul>
+      </div>
+    </section>
+
+    <!-- ELEVATION -->
+    <section class="page" data-route="elevation">
+      <div class="section-title">
+        <div>
+          <p class="label">Foundations</p>
+          <h2 class="h2">Elevation, Borders, Corners</h2>
+          <p class="body-md muted" style="max-width: 70ch; margin: 8px 0 0 0;">
+            Rounded corners + subtle hairline borders define the system. Shadows are light. The look is “clean tech”, not “heavy UI”.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid three">
+        <div class="card" style="box-shadow: var(--shadow-0);">
+          <p class="label">Shadow levels</p>
+          <div class="grid" style="gap:10px;">
+            <div class="card" style="box-shadow: var(--shadow-0); border-radius: 14px; padding: 12px;">Level 0 (none)</div>
+            <div class="card" style="box-shadow: var(--shadow-1); border-radius: 14px; padding: 12px;">Level 1</div>
+            <div class="card" style="box-shadow: var(--shadow-2); border-radius: 14px; padding: 12px;">Level 2</div>
+          </div>
+        </div>
+        <div class="card" style="box-shadow: var(--shadow-0);">
+          <p class="label">Corner radii</p>
+          <div class="grid" style="gap:10px;">
+            <div style="display:flex; gap:10px; align-items:center;">
+              <div style="width:52px; height:36px; border-radius: 16px; border: var(--border-hairline); background: var(--bg-alt);"></div>
+              <div class="body-sm muted">Card / panel: 16px</div>
+            </div>
+            <div style="display:flex; gap:10px; align-items:center;">
+              <div style="width:52px; height:36px; border-radius: 999px; border: var(--border-hairline); background: rgba(255,204,0,0.12);"></div>
+              <div class="body-sm muted">Pills / buttons: 999px</div>
+            </div>
+            <div style="display:flex; gap:10px; align-items:center;">
+              <div style="width:52px; height:36px; border-radius: 12px; border: var(--border-hairline); background: var(--bg-alt);"></div>
+              <div class="body-sm muted">Chart containers: 12px</div>
+            </div>
+          </div>
+        </div>
+        <div class="card" style="box-shadow: var(--shadow-0);">
+          <p class="label">Border tokens</p>
+          <div class="grid" style="gap:10px;">
+            <div style="padding:12px; border: var(--border-hairline); border-radius: 12px;">Hairline</div>
+            <div style="padding:12px; border: var(--border-strong); border-radius: 12px;">Strong</div>
+            <div style="padding:12px; border: var(--border-table-grid); border-radius: 12px;">Table grid</div>
+            <div style="padding:12px; border: var(--border-chart-axes); border-radius: 12px;">Chart axes</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPONENTS -->
+    <section class="page" data-route="components">
+      <div class="section-title">
+        <div>
+          <p class="label">Components</p>
+          <h2 class="h2">Buttons, Chips, Cards</h2>
+          <p class="body-md muted" style="max-width: 70ch; margin: 8px 0 0 0;">
+            These are the building blocks for slides, dashboards, and web assets. Keep them consistent.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid two">
+        <div class="card hoverable">
+          <div class="card-header">
+            <div>
+              <p class="label">Buttons</p>
+              <h3 class="h3">CTA hierarchy</h3>
+            </div>
+            <span class="badge">Hover me</span>
+          </div>
+          <p class="body-md muted" style="margin-top:0;">Primary = yellow. Secondary = white w/ border. Ghost = transparent.</p>
+          <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:12px;">
+            <button class="btn btn-primary" type="button">Primary CTA</button>
+            <button class="btn btn-secondary" type="button">Secondary</button>
+            <button class="btn btn-ghost" type="button">Ghost</button>
+            <button class="btn btn-secondary" type="button" disabled style="opacity:0.5; cursor:not-allowed;">Disabled</button>
+          </div>
+          <div class="divider"></div>
+          <p class="caption" style="margin:0;">Tip: don’t place more than one “primary” CTA per panel unless absolutely needed.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <div>
+              <p class="label">Chips & badges</p>
+              <h3 class="h3">Tags, statuses</h3>
+            </div>
+          </div>
+          <div style="display:flex; gap:10px; flex-wrap:wrap;">
+            <span class="chip">Campaign</span>
+            <span class="chip">iCue</span>
+            <span class="badge success">Success</span>
+            <span class="badge warning">Warning</span>
+            <span class="badge error">Error</span>
+            <span class="badge">Neutral</span>
+          </div>
+          <div class="divider"></div>
+          <p class="caption" style="margin:0;">Badges must not rely on color alone. Use text labels too.</p>
+        </div>
+      </div>
+
+      <div class="grid three" style="margin-top: 16px;">
+        <div class="card">
+          <p class="label">Info card</p>
+          <h3 class="h3">Clean, readable</h3>
+          <p class="body-md muted">Use for explanations, strategy bullets, or section summaries.</p>
+          <a href="#tables" class="btn btn-secondary">See tables</a>
+        </div>
+
+        <div class="card">
+          <p class="label">KPI card</p>
+          <div class="kpi">+15%</div>
+          <p class="caption">Preference lift (example)</p>
+          <div id="sparkline" style="margin-top: 10px;"></div>
+        </div>
+
+        <div class="card">
+          <p class="label">Callout</p>
+          <h4 class="h4" style="margin-top:6px;">One highlight only</h4>
+          <p class="body-md muted">Use yellow for the single thing you want remembered.</p>
+          <div style="margin-top:10px;">
+            <span class="badge warning">Highlight</span>
+            <span class="badge">Support</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TABLES -->
+    <section class="page" data-route="tables">
+      <div class="section-title">
+        <div>
+          <p class="label">Components</p>
+          <h2 class="h2">Tables</h2>
+          <p class="body-md muted" style="max-width: 70ch; margin: 8px 0 0 0;">
+            Use striping for scan-ability. Keep numeric values right-aligned. Avoid dense text.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid two">
+        <div class="chart-card">
+          <p class="chart-title">Campaign KPI table (example)</p>
+          <table aria-label="KPI table">
+            <thead>
+              <tr>
+                <th>Metric</th>
+                <th class="num">Target</th>
+                <th class="num">Actual</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Brand preference lift</td>
+                <td class="num">+15%</td>
+                <td class="num">+12%</td>
+                <td><span class="badge warning">Close</span></td>
+              </tr>
+              <tr>
+                <td>Online sales lift</td>
+                <td class="num">+12%</td>
+                <td class="num">+14%</td>
+                <td><span class="badge success">Above</span></td>
+              </tr>
+              <tr>
+                <td>Repeat purchase lift</td>
+                <td class="num">+10%</td>
+                <td class="num">+8%</td>
+                <td><span class="badge warning">Close</span></td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="caption" style="margin-top:10px;">Table style: hairline grid, striping, clean header.</div>
+        </div>
+
+        <div class="chart-card">
+          <p class="chart-title">Feature comparison (dot scale example)</p>
+          <table aria-label="Feature comparison">
+            <thead>
+              <tr>
+                <th>Capability</th>
+                <th class="num">CORSAIR</th>
+                <th class="num">Competitor A</th>
+                <th class="num">Competitor B</th>
+              </tr>
+            </thead>
+            <tbody id="featureTableBody"></tbody>
+          </table>
+          <div class="caption" style="margin-top:10px;">Dots must be paired with labels if used for status.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHARTS -->
+    <section class="page" data-route="charts">
+      <div class="section-title">
+        <div>
+          <p class="label">Components</p>
+          <h2 class="h2">Charts</h2>
+          <p class="body-md muted" style="max-width: 70ch; margin: 8px 0 0 0;">
+            Avoid 3D. Keep labels horizontal. Use yellow as a single highlight, not a full multi-series palette.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid two">
+        <div class="chart-card">
+          <p class="chart-title">Bar (vertical): Preference lift by quarter</p>
+          <div id="barVertical"></div>
+          <div class="legend">
+            <span class="key"><span class="dot" style="background: var(--dv-neutral-1);"></span>Baseline</span>
+            <span class="key"><span class="dot" style="background: var(--dv-highlight);"></span>Highlight</span>
+          </div>
+        </div>
+
+        <div class="chart-card">
+          <p class="chart-title">Line: Ecosystem adoption over time</p>
+          <div id="lineChart"></div>
+          <div class="legend">
+            <span class="key"><span class="dot" style="background: var(--dv-neutral-1);"></span>Series</span>
+            <span class="key"><span class="dot" style="background: var(--dv-highlight);"></span>Target</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid two" style="margin-top: 14px;">
+        <div class="chart-card">
+          <p class="chart-title">Donut: Channel mix</p>
+          <div id="donutChart"></div>
+          <div class="legend">
+            <span class="key"><span class="dot" style="background: var(--dv-highlight);"></span>Primary segment</span>
+            <span class="key"><span class="dot" style="background: var(--dv-muted-1);"></span>Other</span>
+          </div>
+        </div>
+
+        <div class="chart-card">
+          <p class="chart-title">Risk matrix (3×3 example)</p>
+          <div id="riskMatrix"></div>
+          <div class="caption" style="margin-top:10px;">Use labels, not just heat color. Keep axes readable.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WIDGETS -->
+    <section class="page" data-route="widgets">
+      <div class="section-title">
+        <div>
+          <p class="label">Widgets</p>
+          <h2 class="h2">Timeline, Pills, Channel Map</h2>
+          <p class="body-md muted" style="max-width: 70ch; margin: 8px 0 0 0;">
+            These are reusable “modules” for presentations and dashboards.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid two">
+        <div class="card" style="box-shadow: var(--shadow-0);">
+          <p class="label">Timeline strip</p>
+          <div id="timeline"></div>
+        </div>
+
+        <div class="card" style="box-shadow: var(--shadow-0);">
+          <p class="label">Metric pill row</p>
+          <div id="pillRow"></div>
+          <div class="divider"></div>
+          <p class="caption" style="margin:0;">Pills are for quick scanning, not paragraphs.</p>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top: 14px; box-shadow: var(--shadow-0);">
+        <p class="label">Channel map</p>
+        <div id="channelMap"></div>
+        <div class="caption" style="margin-top:10px;">Nodes: rounded rectangles. Connectors: subtle gray. Highlight: yellow border only where needed.</div>
+      </div>
+    </section>
+
+    <!-- LAYOUTS -->
+    <section class="page" data-route="layouts">
+      <div class="section-title">
+        <div>
+          <p class="label">Layouts</p>
+          <h2 class="h2">Slide, Email, Dashboard Patterns</h2>
+          <p class="body-md muted" style="max-width: 70ch; margin: 8px 0 0 0;">
+            Prefer simple patterns: left text + right chart, or KPI cards in a row. Keep the same margins across pages.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid three" id="layoutMocks"></div>
+    </section>
+
+    <!-- INTERACTIONS -->
+    <section class="page" data-route="interactions">
+      <div class="section-title">
+        <div>
+          <p class="label">States</p>
+          <h2 class="h2">Hover, Focus, Active</h2>
+          <p class="body-md muted" style="max-width: 70ch; margin: 8px 0 0 0;">
+            Hover lifts cards. Focus uses yellow outline. Active presses reduce shadow.
+            Try tabbing through the buttons to see focus rings.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid two">
+        <div class="card hoverable">
+          <p class="label">Hover</p>
+          <h3 class="h3">Cards lift</h3>
+          <p class="body-md muted">Hover this card. Shadow increases and it lifts slightly.</p>
+        </div>
+
+        <div class="card">
+          <p class="label">Focus</p>
+          <h3 class="h3">Keyboard visibility</h3>
+          <p class="body-md muted">Click here, then press Tab. The outline should be obvious and consistent.</p>
+          <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:12px;">
+            <button class="btn btn-primary" type="button">Focusable CTA</button>
+            <button class="btn btn-secondary" type="button">Focusable</button>
+            <a class="btn btn-ghost" href="#overview">Focusable link</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top: 14px;">
+        <p class="label">Link style</p>
+        <p class="body-md">
+          Example link: <a href="#accessibility" style="text-decoration: underline;">Accessibility page</a>.
+          On hover, underline should stay. Don’t hide where links go.
+        </p>
+      </div>
+    </section>
+
+    <!-- ACCESSIBILITY -->
+    <section class="page" data-route="accessibility">
+      <div class="section-title">
+        <div>
+          <p class="label">Accessibility</p>
+          <h2 class="h2">Contrast & Non-Color Cues</h2>
+          <p class="body-md muted" style="max-width: 70ch; margin: 8px 0 0 0;">
+            Body text should aim for a contrast ratio of 7.0+. Small text should aim for 4.5+.
+            Avoid putting copy directly on RGB gradients.
+          </p>
+        </div>
+      </div>
+
+      <div class="contrast-tool">
+        <div class="card" style="box-shadow: var(--shadow-0);">
+          <p class="label">Contrast checker</p>
+          <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+            <label class="body-sm">Text color<br/>
+              <input id="textColor" type="color" value="#111111" style="width:100%; height:40px; border-radius: 12px; border: var(--border-hairline); padding: 4px; background: var(--bg-primary);" />
+            </label>
+            <label class="body-sm">Background color<br/>
+              <input id="bgColor" type="color" value="#FFFFFF" style="width:100%; height:40px; border-radius: 12px; border: var(--border-hairline); padding: 4px; background: var(--bg-primary);" />
+            </label>
+          </div>
+          <div class="divider"></div>
+          <div class="body-sm muted">
+            Quick presets:
+            <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:10px;">
+              <button class="btn btn-secondary" id="presetPrimaryOnWhite" type="button">Primary on White</button>
+              <button class="btn btn-secondary" id="presetMutedOnAlt" type="button">Muted on Alt</button>
+              <button class="btn btn-secondary" id="presetWhiteOnYellow" type="button">White on Yellow</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="contrast-sample" id="contrastSample" style="background:#FFFFFF; color:#111111;">
+          <p class="label" style="margin-top:0;">Sample</p>
+          <h3 class="h3" style="margin-top:8px;">Join the Light</h3>
+          <p class="body-md" style="max-width: 56ch;">
+            Use this box to verify readability. If it fails, adjust background, text color, or both.
+          </p>
+          <div class="contrast-result">
+            <div>
+              <span class="pill" id="contrastPill">Contrast</span>
+              <span class="caption" id="contrastRatioText" style="margin-left:10px;">–</span>
+            </div>
+            <span class="caption">Targets: Body 7.0+, Small 4.5+</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid two" style="margin-top: 14px;">
+        <div class="card" style="box-shadow: var(--shadow-0);">
+          <p class="label">Don’t use color alone</p>
+          <p class="body-md muted">Badges pair color with text. Charts should label the highlighted series.</p>
+          <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:12px;">
+            <span class="badge success">Success</span>
+            <span class="badge warning">Warning</span>
+            <span class="badge error">Error</span>
+          </div>
+        </div>
+
+        <div class="card" style="box-shadow: var(--shadow-0);">
+          <p class="label">Avoid text on gradients</p>
+          <div style="border-radius: 14px; border: var(--border-hairline); overflow:hidden;">
+            <div style="height: 80px; background: linear-gradient(var(--grad-angle), var(--grad-stop-1), var(--grad-stop-2), var(--grad-stop-3)); display:flex; align-items:center; justify-content:center;">
+              <span class="badge" style="background: rgba(255,255,255,0.9);">Put text in a clean panel</span>
+            </div>
+          </div>
+          <p class="caption" style="margin-top:10px;">If you must use gradient, add a white panel behind the copy.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- JSON -->
+    <section class="page" data-route="json">
+      <div class="section-title">
+        <div>
+          <p class="label">Raw</p>
+          <h2 class="h2">Brand kit JSON</h2>
+          <p class="body-md muted" style="max-width: 70ch; margin: 8px 0 0 0;">
+            This is the exact JSON embedded into this HTML file.
+          </p>
+        </div>
+      </div>
+      <pre id="jsonBlock"></pre>
+    </section>
+
+  </main>
+</div>
+
+<script id="brandKit" type="application/json">{
+  "visual_brand_kit": {
+    "meta": {
+      "brand": "CORSAIR",
+      "campaign": "Join the Light",
+      "version": "1.0",
+      "scope": [
+        "slides",
+        "microsite",
+        "dashboards",
+        "emails",
+        "social",
+        "PDFs",
+        "internal docs"
+      ]
+    },
+    "foundations": {
+      "color": {
+        "backgrounds": {
+          "primary": "#FFFFFF",
+          "alternate": "#F7F7FA"
+        },
+        "text": {
+          "primary": "#111111",
+          "alternate": "#222222",
+          "muted": "#666666",
+          "disabled": "#A0A0A0"
+        },
+        "accent": {
+          "corsair_yellow": "#FFCC00",
+          "rgb_gradient_primary": {
+            "stops": [
+              "#3874FF",
+              "#8C4BFF",
+              "#FFCC00"
+            ],
+            "angle_degrees": 135
+          },
+          "chip_pill_background": "#111111"
+        },
+        "ui_neutrals": {
+          "border_subtle": "#E0E0E5",
+          "border_strong": "#C4C4CC",
+          "surface": "#FFFFFF",
+          "surface_elevated": "#F7F7FA",
+          "surface_highlight": "#FFF8E0"
+        },
+        "data_viz_palette": {
+          "series_neutral": [
+            "#111111",
+            "#444444",
+            "#777777"
+          ],
+          "series_highlight": "#FFCC00",
+          "series_muted": [
+            "#C4C4CC",
+            "#E0E0E5"
+          ],
+          "heat_low": "#F7F7FA",
+          "heat_mid": "#8C4BFF",
+          "heat_high": "#FFCC00"
+        },
+        "rules": {
+          "use_accent_sparingly": true,
+          "accent_usage": [
+            "CTA buttons",
+            "key numbers in charts",
+            "important icons",
+            "hover states"
+          ],
+          "avoid_full_rgb_rainbow": true,
+          "avoid_dark_backgrounds_for_body_copy": true,
+          "allow_dark_backgrounds_for_hero_only": true
+        }
+      },
+      "typography": {
+        "families": {
+          "heading_primary": [
+            "Poppins",
+            "Helvetica Neue",
+            "system-ui"
+          ],
+          "body_primary": [
+            "Inter",
+            "Calibri",
+            "system-ui"
+          ],
+          "code_mono": [
+            "Consolas",
+            "SF Mono",
+            "monospace"
+          ]
+        },
+        "scale": {
+          "display": {
+            "size_pt": 44,
+            "weight": 700,
+            "tracking": 0
+          },
+          "h1": {
+            "size_pt": 36,
+            "weight": 700,
+            "tracking": 0
+          },
+          "h2": {
+            "size_pt": 28,
+            "weight": 600,
+            "tracking": 0
+          },
+          "h3": {
+            "size_pt": 24,
+            "weight": 600,
+            "tracking": 0
+          },
+          "h4": {
+            "size_pt": 20,
+            "weight": 500,
+            "tracking": 0
+          },
+          "body_lg": {
+            "size_pt": 18,
+            "weight": 400,
+            "line_height": 1.4
+          },
+          "body_md": {
+            "size_pt": 16,
+            "weight": 400,
+            "line_height": 1.4
+          },
+          "body_sm": {
+            "size_pt": 14,
+            "weight": 400,
+            "line_height": 1.4
+          },
+          "caption": {
+            "size_pt": 12,
+            "weight": 400,
+            "line_height": 1.3
+          },
+          "label": {
+            "size_pt": 11,
+            "weight": 600,
+            "line_height": 1.2,
+            "letter_spacing_em": 0.08
+          }
+        },
+        "usage": {
+          "headings": {
+            "font_family": "heading_primary",
+            "case": "sentence",
+            "do_not_use_all_caps_for_long_text": true
+          },
+          "labels_and_kpis": {
+            "font_family": "heading_primary",
+            "case": "upper",
+            "tracking": "wide"
+          },
+          "body": {
+            "font_family": "body_primary",
+            "max_line_length_chars": 80
+          },
+          "code_snippets": {
+            "font_family": "code_mono",
+            "background": "#F7F7FA",
+            "border_radius_px": 4
+          }
+        }
+      },
+      "spacing": {
+        "unit_px": 8,
+        "scale": {
+          "xs": 4,
+          "sm": 8,
+          "md": 16,
+          "lg": 24,
+          "xl": 32,
+          "xxl": 48
+        },
+        "rules": {
+          "outer_margins_slide_in": 32,
+          "outer_margins_web": 24,
+          "widget_internal_padding": 16,
+          "card_gap": 16,
+          "section_gap": 32
+        }
+      },
+      "grid_and_layout": {
+        "slide_4x3": {
+          "columns": 12,
+          "gutter_px": 16,
+          "safe_margin_px": 32
+        },
+        "web_desktop": {
+          "columns": 12,
+          "gutter_px": 24,
+          "max_content_width_px": 1200
+        },
+        "web_mobile": {
+          "columns": 4,
+          "gutter_px": 12,
+          "padding_px": 16
+        },
+        "alignment_rules": {
+          "use_left_alignment_for_text": true,
+          "center_only_for_hero_and_end_card": true,
+          "charts_align_to_grid": true
+        }
+      },
+      "elevation_and_borders": {
+        "corner_radius": {
+          "chip_px": 999,
+          "button_px": 999,
+          "card_px": 16,
+          "panel_px": 16,
+          "chart_container_px": 12
+        },
+        "shadow": {
+          "level_0": "none",
+          "level_1": "0px 4px 12px rgba(0,0,0,0.06)",
+          "level_2": "0px 10px 30px rgba(0,0,0,0.12)"
+        },
+        "borders": {
+          "hairline": "1px solid #E0E0E5",
+          "strong": "2px solid #C4C4CC",
+          "chart_axes": "1px solid #C4C4CC",
+          "table_grid": "1px solid #E0E0E5"
+        }
+      },
+      "iconography": {
+        "style": {
+          "stroke_width": 2,
+          "corner_style": "rounded",
+          "fill_usage": "outline_with_spot_fill",
+          "default_color": "#111111",
+          "highlight_color": "#FFCC00"
+        },
+        "usage": {
+          "use_for": [
+            "data callouts",
+            "section headers",
+            "risk levels",
+            "channel labels"
+          ],
+          "avoid_over_decoration": true
+        }
+      }
+    },
+    "components": {
+      "buttons": {
+        "primary": {
+          "background": "#FFCC00",
+          "text_color": "#111111",
+          "border": "none",
+          "corner_radius_px": 999,
+          "padding_y_px": 10,
+          "padding_x_px": 24,
+          "font_weight": 600,
+          "shadow": "level_1"
+        },
+        "secondary": {
+          "background": "#FFFFFF",
+          "text_color": "#111111",
+          "border": "1px solid #C4C4CC",
+          "corner_radius_px": 999,
+          "padding_y_px": 10,
+          "padding_x_px": 24,
+          "font_weight": 500,
+          "shadow": "level_0"
+        },
+        "ghost": {
+          "background": "transparent",
+          "text_color": "#111111",
+          "border": "none",
+          "corner_radius_px": 999,
+          "padding_y_px": 8,
+          "padding_x_px": 16
+        },
+        "states": {
+          "hover_darkens_background_by_percent": 10,
+          "active_press_shadow": "level_0",
+          "disabled_opacity": 0.5
+        }
+      },
+      "chips_and_tags": {
+        "pill_tag": {
+          "background": "#111111",
+          "text_color": "#FFFFFF",
+          "corner_radius_px": 999,
+          "padding_y_px": 4,
+          "padding_x_px": 12,
+          "font_size_pt": 11,
+          "letter_spacing_em": 0.08
+        },
+        "status_badge": {
+          "variants": {
+            "success": {
+              "border_color": "#3BA55C",
+              "text_color": "#3BA55C"
+            },
+            "warning": {
+              "border_color": "#FFCC00",
+              "text_color": "#FFCC00"
+            },
+            "error": {
+              "border_color": "#FF4B4B",
+              "text_color": "#FF4B4B"
+            }
+          },
+          "background": "#FFFFFF",
+          "border_width_px": 1
+        }
+      },
+      "cards": {
+        "info_card": {
+          "background": "#FFFFFF",
+          "border": "1px solid #E0E0E5",
+          "corner_radius_px": 16,
+          "padding_px": 24,
+          "shadow": "level_1",
+          "header_typography": "h3",
+          "body_typography": "body_md"
+        },
+        "kpi_card": {
+          "background": "#FFFFFF",
+          "border": "none",
+          "corner_radius_px": 16,
+          "padding_px": 20,
+          "shadow": "level_1",
+          "layout": {
+            "kpi_label": "top_left",
+            "kpi_value": "center_left",
+            "trend_indicator": "top_right",
+            "sparkline": "bottom_full"
+          },
+          "kpi_value_style": {
+            "font_size_pt": 32,
+            "font_weight": 700
+          },
+          "trend_positive_color": "#3BA55C",
+          "trend_negative_color": "#FF4B4B"
+        }
+      },
+      "tables": {
+        "default": {
+          "header_background": "#F7F7FA",
+          "header_text_color": "#111111",
+          "header_font_weight": 600,
+          "row_striping": {
+            "enabled": true,
+            "odd_row_background": "#FFFFFF",
+            "even_row_background": "#FAFAFC"
+          },
+          "grid_lines": "1px solid #E0E0E5",
+          "cell_padding_px": 12,
+          "numeric_alignment": "right",
+          "text_alignment": "left"
+        },
+        "feature_comparison": {
+          "use_icon_bullets": true,
+          "full_dot_color": "#111111",
+          "half_dot_color": "#FFCC00",
+          "empty_dot_color": "#C4C4CC",
+          "icon_size_px": 10,
+          "row_height_px": 32
+        }
+      },
+      "graphs_and_charts": {
+        "common": {
+          "background": "#FFFFFF",
+          "plot_area_background": "#FFFFFF",
+          "axis_color": "#C4C4CC",
+          "gridline_color": "#E0E0E5",
+          "label_color": "#111111",
+          "value_label_font_size_pt": 12,
+          "title_font_style": "h3",
+          "legend_position": "bottom",
+          "corner_radius_px": 12
+        },
+        "types": {
+          "bar_vertical": {
+            "bar_corner_radius_px": 4,
+            "bar_spacing_ratio": 0.3,
+            "default_series_colors": [
+              "#111111",
+              "#777777"
+            ],
+            "highlight_series_color": "#FFCC00"
+          },
+          "bar_horizontal": {
+            "bar_corner_radius_px": 4,
+            "bar_spacing_ratio": 0.3,
+            "default_series_colors": [
+              "#111111",
+              "#777777"
+            ],
+            "highlight_series_color": "#FFCC00"
+          },
+          "line": {
+            "line_width_px": 2,
+            "point_radius_px": 3,
+            "series_colors": [
+              "#111111",
+              "#FFCC00"
+            ],
+            "fill_under_line_alpha": 0.05
+          },
+          "donut": {
+            "inner_radius_ratio": 0.6,
+            "outer_radius_ratio": 0.9,
+            "primary_segment_color": "#FFCC00",
+            "other_segment_color": "#C4C4CC",
+            "center_label_style": "h4"
+          },
+          "risk_matrix": {
+            "grid_background_low": "#F7F7FA",
+            "grid_background_mid": "#8C4BFF1A",
+            "grid_background_high": "#FFCC001A",
+            "axis_label_style": "body_sm",
+            "cell_border_color": "#C4C4CC"
+          }
+        },
+        "rules": {
+          "max_series_per_chart": 4,
+          "avoid_3d_effects": true,
+          "use_yellow_for_single_key_highlight_only": true,
+          "keep_labels_clear_no_tilted_text": true
+        }
+      },
+      "widgets": {
+        "timeline_strip": {
+          "background": "#FFFFFF",
+          "border": "1px solid #E0E0E5",
+          "corner_radius_px": 16,
+          "milestone_dot_color": "#FFCC00",
+          "milestone_line_color": "#C4C4CC",
+          "quarter_label_style": "label"
+        },
+        "metric_pill_row": {
+          "background": "transparent",
+          "pill_background": "#F7F7FA",
+          "pill_corner_radius_px": 999,
+          "pill_padding_px": 8,
+          "pill_gap_px": 8
+        },
+        "channel_map": {
+          "node_shape": "rounded_rectangle",
+          "node_background": "#FFFFFF",
+          "node_border": "1px solid #E0E0E5",
+          "node_highlight_border": "2px solid #FFCC00",
+          "connector_style": "curved",
+          "connector_color": "#C4C4CC",
+          "label_style": "body_sm"
+        }
+      },
+      "hero_and_end_card": {
+        "hero_panel": {
+          "background": "#FFFFFF",
+          "top_strip_gradient": {
+            "enabled": true,
+            "height_px": 8,
+            "gradient_stops": [
+              "#3874FF",
+              "#8C4BFF",
+              "#FFCC00"
+            ]
+          },
+          "image_treatment": {
+            "apply_soft_rgb_glow": true,
+            "outer_glow_blur_px": 40,
+            "outer_glow_opacity": 0.3
+          },
+          "text_alignment": "left",
+          "cta_button_style": "primary"
+        },
+        "standard_end_card": {
+          "background": "#FFFFFF",
+          "subtle_rgb_glow": true,
+          "glow_gradient": [
+            "#3874FF",
+            "#8C4BFF",
+            "#FFCC00"
+          ],
+          "layout": {
+            "logo_position": "top_left",
+            "tagline_position": "center",
+            "hashtag_position": "below_tagline",
+            "url_position": "bottom_center",
+            "cta_button_position": "optional_below_tagline"
+          },
+          "tagline_style": {
+            "font_size_pt": 32,
+            "font_weight": 700,
+            "letter_spacing_em": 0.02
+          },
+          "hashtag_style": {
+            "font_size_pt": 16,
+            "font_weight": 500
+          },
+          "url_style": {
+            "font_size_pt": 14,
+            "font_weight": 400,
+            "color": "#111111"
+          }
+        }
+      }
+    },
+    "layouts": {
+      "slide_title": {
+        "background": "#FFFFFF",
+        "has_rgb_top_border": true,
+        "title_area_height_ratio": 0.35,
+        "title_style": "h1",
+        "subtitle_style": "body_lg",
+        "optional_visual_right_side": true
+      },
+      "slide_content": {
+        "background": "#FFFFFF",
+        "header_style": "h2",
+        "body_style": "body_md",
+        "supports_two_column_layout": true,
+        "column_gap_px": 32,
+        "preferred_patterns": [
+          "left_text_right_chart",
+          "left_chart_right_bullets",
+          "three_kpi_cards_in_row"
+        ]
+      },
+      "microsite_section": {
+        "background": "#FFFFFF",
+        "section_spacing": 64,
+        "section_title_style": "h2",
+        "content_max_width_px": 960,
+        "hero_first_section": true
+      },
+      "email": {
+        "background": "#F7F7FA",
+        "body_background": "#FFFFFF",
+        "max_width_px": 640,
+        "outer_padding_px": 16,
+        "inner_padding_px": 24,
+        "cta_button_style": "primary",
+        "header_logo_centered": true
+      },
+      "dashboard": {
+        "background": "#FFFFFF",
+        "header_bar_height_px": 64,
+        "widget_gap_px": 16,
+        "supports_3_column_grid": true,
+        "kpi_row_on_top": true
+      }
+    },
+    "states_and_interactions": {
+      "hover": {
+        "card_shadow_level": "level_2",
+        "card_lift_px": 2,
+        "button_brightness_change_percent": -10,
+        "link_underline_on_hover": true
+      },
+      "focus": {
+        "outline_color": "#FFCC00",
+        "outline_width_px": 2,
+        "outline_offset_px": 3
+      },
+      "active": {
+        "button_shadow": "level_0",
+        "card_shadow": "level_1"
+      }
+    },
+    "accessibility": {
+      "body_text_min_contrast_ratio": 7.0,
+      "small_text_min_contrast_ratio": 4.5,
+      "preferred_backgrounds_for_copy": [
+        "#FFFFFF",
+        "#F7F7FA"
+      ],
+      "avoid_text_on_rgb_gradients": true,
+      "chart_label_font_size_min_pt": 11,
+      "do_not_use_color_alone_for_status": true
+    }
+  }
+}</script>
+
+<script>
+(function() {
+  const kit = JSON.parse(document.getElementById('brandKit').textContent);
+  const v = kit.visual_brand_kit;
+
+  // ---------- Router ----------
+  const pages = Array.from(document.querySelectorAll('.page'));
+  const navLinks = Array.from(document.querySelectorAll('.nav a'));
+  const crumb = document.getElementById('crumb');
+
+  function setActive(route) {
+    pages.forEach(p => p.classList.toggle('active', p.dataset.route === route));
+    navLinks.forEach(a => a.classList.toggle('active', a.dataset.route === route));
+    const activeLink = navLinks.find(a => a.dataset.route === route);
+    crumb.textContent = activeLink ? activeLink.textContent : 'Overview';
+  }
+
+  function routeFromHash() {
+    const h = (location.hash || '#overview').replace('#','').trim();
+    const allowed = new Set(navLinks.map(a => a.dataset.route));
+    return allowed.has(h) ? h : 'overview';
+  }
+
+  window.addEventListener('hashchange', () => setActive(routeFromHash()));
+  setActive(routeFromHash());
+
+  // ---------- Copy helpers ----------
+  async function copyText(text) {
+    try {
+      await navigator.clipboard.writeText(text);
+      toast('Copied');
+    } catch (e) {
+      // fallback
+      const ta = document.createElement('textarea');
+      ta.value = text;
+      document.body.appendChild(ta);
+      ta.select();
+      document.execCommand('copy');
+      ta.remove();
+      toast('Copied');
+    }
+  }
+
+  let toastTimer = null;
+  function toast(msg) {
+    clearTimeout(toastTimer);
+    let el = document.getElementById('toast');
+    if (!el) {
+      el = document.createElement('div');
+      el.id = 'toast';
+      el.style.position = 'fixed';
+      el.style.right = '18px';
+      el.style.bottom = '18px';
+      el.style.background = 'rgba(17,17,17,0.92)';
+      el.style.color = '#fff';
+      el.style.padding = '10px 12px';
+      el.style.borderRadius = '12px';
+      el.style.fontFamily = 'var(--font-heading)';
+      el.style.fontSize = '13px';
+      el.style.boxShadow = 'var(--shadow-2)';
+      el.style.zIndex = 9999;
+      document.body.appendChild(el);
+    }
+    el.textContent = msg;
+    el.style.opacity = '1';
+    toastTimer = setTimeout(() => el.style.opacity = '0', 900);
+  }
+
+  document.getElementById('copyCssBtn').addEventListener('click', () => {
+    const css = Array.from(document.styleSheets)
+      .flatMap(s => {
+        try {
+          return Array.from(s.cssRules || []);
+        } catch (e) {
+          return [];
+        }
+      })
+      .map(r => r.cssText)
+      .find(t => t.startsWith(':root'));
+    copyText(css || '/* Could not read CSS rules in this browser */');
+  });
+
+  document.getElementById('copyJsonBtn').addEventListener('click', () => copyText(JSON.stringify(kit, null, 2)));
+  document.getElementById('copyPaletteBtn').addEventListener('click', () => copyText(JSON.stringify(v.foundations.color, null, 2)));
+
+  // ---------- Render: accent usage ----------
+  const accentUsageList = document.getElementById('accentUsageList');
+  const usage = v.foundations.color.rules.accent_usage || [];
+  accentUsageList.innerHTML = '<ul style="margin: 8px 0 0 18px;">' + usage.map(u => `<li>${escapeHtml(u)}</li>`).join('') + '</ul>';
+
+  // ---------- Render: swatches ----------
+  const swatches = document.getElementById('swatches');
+  function addSwatch(name, hex) {
+    const el = document.createElement('div');
+    el.className = 'swatch';
+    el.innerHTML = `
+      <div class="chipbar" style="background:${hex};"></div>
+      <div class="meta">
+        <div class="name">${escapeHtml(name)}</div>
+        <div class="hex">${escapeHtml(hex)}</div>
+      </div>`;
+    swatches.appendChild(el);
+  }
+
+  const c = v.foundations.color;
+  Object.entries(c.backgrounds).forEach(([k,val]) => addSwatch(`Background / ${k}`, val));
+  Object.entries(c.text).forEach(([k,val]) => addSwatch(`Text / ${k}`, val));
+  addSwatch('Accent / corsair_yellow', c.accent.corsair_yellow);
+  addSwatch('Neutral / border_subtle', c.ui_neutrals.border_subtle);
+  addSwatch('Neutral / border_strong', c.ui_neutrals.border_strong);
+  addSwatch('Surface / surface_highlight', c.ui_neutrals.surface_highlight);
+  addSwatch('Data / highlight', c.data_viz_palette.series_highlight);
+  c.data_viz_palette.series_neutral.forEach((val, i) => addSwatch(`Data / neutral_${i+1}`, val));
+  c.data_viz_palette.series_muted.forEach((val, i) => addSwatch(`Data / muted_${i+1}`, val));
+  addSwatch('Heat / low', c.data_viz_palette.heat_low);
+  addSwatch('Heat / mid', c.data_viz_palette.heat_mid);
+  addSwatch('Heat / high', c.data_viz_palette.heat_high);
+
+  // ---------- Render: type scale ----------
+  const typeScale = document.getElementById('typeScale');
+  const scale = v.foundations.typography.scale;
+
+  function ptToPx(pt) { return Math.round(pt * 1.3333333); }
+
+  const sampleLine = 'Lighting that looks clean, controlled, and personal.';
+  const sampleHead = 'Join the Light';
+
+  const blocks = [
+    ['display', 'Display'],
+    ['h1', 'H1'],
+    ['h2', 'H2'],
+    ['h3', 'H3'],
+    ['h4', 'H4'],
+    ['body_lg', 'Body LG'],
+    ['body_md', 'Body MD'],
+    ['body_sm', 'Body SM'],
+    ['caption', 'Caption'],
+    ['label', 'Label']
+  ];
+
+  blocks.forEach(([key, label]) => {
+    const spec = scale[key];
+    const px = ptToPx(spec.size_pt);
+    const wrap = document.createElement('div');
+    wrap.className = 'card';
+    wrap.style.boxShadow = 'var(--shadow-0)';
+    wrap.innerHTML = `
+      <div style="display:flex; justify-content:space-between; gap:12px; align-items:baseline;">
+        <div class="label">${escapeHtml(label)}</div>
+        <div class="caption">${spec.size_pt}pt • ${px}px • ${spec.weight}w</div>
+      </div>
+      <div style="margin-top:10px;">
+        <div class="${key.replace('_','-')}" style="font-family: ${
+            key.startsWith('body') || key === 'caption' ? 'var(--font-body)' :
+            key === 'label' ? 'var(--font-heading)' : 'var(--font-heading)'
+          };">
+          ${escapeHtml(key.startsWith('body') || key === 'caption' ? sampleLine : sampleHead)}
+        </div>
+      </div>
+    `;
+    typeScale.appendChild(wrap);
+  });
+
+  // ---------- Render: spacing scale ----------
+  const spacingScale = document.getElementById('spacingScale');
+  const sp = v.foundations.spacing;
+  const scaleItems = Object.entries(sp.scale);
+
+  spacingScale.innerHTML = scaleItems.map(([k,val]) => `
+    <div style="display:flex; align-items:center; gap:12px; margin: 10px 0;">
+      <div class="pill" style="min-width: 74px; justify-content:center;">${escapeHtml(k)}</div>
+      <div style="height: 14px; width:${val}px; background: rgba(255,204,0,0.18); border: var(--border-hairline); border-radius: 999px;"></div>
+      <div class="caption">${val}px</div>
+    </div>
+  `).join('');
+
+  // ---------- Render: alignment rules ----------
+  const align = v.foundations.grid_and_layout.alignment_rules;
+  const ar = document.getElementById('alignmentRules');
+  Object.entries(align).forEach(([k,val]) => {
+    const li = document.createElement('li');
+    li.textContent = `${k.replaceAll('_',' ')}: ${val ? 'true' : 'false'}`;
+    ar.appendChild(li);
+  });
+
+  // ---------- Sparkline ----------
+  function sparklineSVG(values) {
+    const w = 240, h = 56, pad = 6;
+    const min = Math.min(...values), max = Math.max(...values);
+    const xStep = (w - pad*2) / (values.length - 1 || 1);
+    const y = (v) => {
+      if (max === min) return h/2;
+      const t = (v - min) / (max - min);
+      return (h - pad) - t * (h - pad*2);
+    };
+    const pts = values.map((val,i) => `${(pad + i*xStep).toFixed(1)},${y(val).toFixed(1)}`).join(' ');
+    return `
+      <svg width="100%" viewBox="0 0 ${w} ${h}" role="img" aria-label="Sparkline">
+        <rect x="0" y="0" width="${w}" height="${h}" rx="12" ry="12" fill="var(--bg-alt)" stroke="var(--border-subtle)"/>
+        <polyline points="${pts}" fill="none" stroke="var(--dv-neutral-1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="${pad + (values.length-1)*xStep}" cy="${y(values[values.length-1])}" r="3" fill="var(--dv-highlight)" stroke="var(--dv-neutral-1)" stroke-width="1"/>
+      </svg>`;
+  }
+  document.getElementById('sparkline').innerHTML = sparklineSVG([8, 12, 11, 14, 16, 15, 18]);
+
+  // ---------- Feature comparison dots ----------
+  const ftBody = document.getElementById('featureTableBody');
+  const dot = (level) => {
+    const colors = {
+      full: 'var(--dv-neutral-1)',
+      half: 'var(--dv-highlight)',
+      empty: 'var(--dv-muted-1)'
+    };
+    const c = level === 2 ? colors.full : (level === 1 ? colors.half : colors.empty);
+    return `<span aria-hidden="true" style="display:inline-block;width:10px;height:10px;border-radius:999px;background:${c};border:1px solid var(--border-subtle);"></span>`;
+  };
+  const rows = [
+    { cap: 'Unified control software', a: 2, b: 1, c: 1 },
+    { cap: 'Creator-ready ecosystem', a: 2, b: 1, c: 2 },
+    { cap: 'Setup onboarding clarity', a: 1, b: 1, c: 1 },
+    { cap: 'RGB customization', a: 2, b: 2, c: 1 }
+  ];
+  ftBody.innerHTML = rows.map(r => `
+    <tr>
+      <td>${escapeHtml(r.cap)}</td>
+      <td class="num">${dot(r.a)} <span class="caption" style="margin-left:8px;">${['Low','Med','High'][r.a]}</span></td>
+      <td class="num">${dot(r.b)} <span class="caption" style="margin-left:8px;">${['Low','Med','High'][r.b]}</span></td>
+      <td class="num">${dot(r.c)} <span class="caption" style="margin-left:8px;">${['Low','Med','High'][r.c]}</span></td>
+    </tr>
+  `).join('');
+
+  // ---------- Charts: basic SVG helpers ----------
+  function svgEl(w, h, inner) {
+    return `<svg width="100%" viewBox="0 0 ${w} ${h}" role="img">${inner}</svg>`;
+  }
+
+  function barVertical(containerId, labels, values, highlightIndex) {
+    const w = 360, h = 240;
+    const pad = 32, top = 18, bottom = 36;
+    const max = Math.max(...values) * 1.15;
+    const chartW = w - pad*2;
+    const chartH = h - top - bottom;
+    const barW = chartW / values.length * 0.62;
+    const gap = chartW / values.length * 0.38;
+
+    const x0 = pad;
+    const y0 = top + chartH;
+
+    // gridlines
+    let inner = `
+      <rect x="0" y="0" width="${w}" height="${h}" rx="12" fill="var(--bg-primary)" stroke="var(--border-subtle)"/>
+    `;
+    const gridCount = 4;
+    for (let i=0;i<=gridCount;i++) {
+      const y = top + (chartH/gridCount)*i;
+      inner += `<line x1="${pad}" y1="${y}" x2="${w-pad}" y2="${y}" stroke="var(--border-subtle)" stroke-width="1" />`;
+    }
+    // axes
+    inner += `<line x1="${pad}" y1="${y0}" x2="${w-pad}" y2="${y0}" stroke="var(--border-strong)" stroke-width="0" />`;
+
+    values.forEach((v,i) => {
+      const x = x0 + i*(barW+gap) + gap/2;
+      const bh = (v/max) * chartH;
+      const y = y0 - bh;
+      const fill = (i === highlightIndex) ? 'var(--dv-highlight)' : 'var(--dv-neutral-1)';
+      inner += `<rect x="${x}" y="${y}" width="${barW}" height="${bh}" rx="4" fill="${fill}" />`;
+      inner += `<text x="${x + barW/2}" y="${h-12}" text-anchor="middle" font-size="12" fill="var(--text-muted)" font-family="var(--font-heading)">${escapeHtml(labels[i])}</text>`;
+      inner += `<text x="${x + barW/2}" y="${y-6}" text-anchor="middle" font-size="12" fill="var(--text-muted)" font-family="var(--font-mono)">${v}%</text>`;
+    });
+
+    document.getElementById(containerId).innerHTML = svgEl(w,h,inner);
+  }
+
+  function lineChart(containerId, labels, values, targetValue) {
+    const w = 360, h = 240;
+    const pad = 34, top = 18, bottom = 36;
+    const min = Math.min(...values, targetValue);
+    const max = Math.max(...values, targetValue);
+    const chartW = w - pad*2;
+    const chartH = h - top - bottom;
+    const xStep = chartW / (values.length - 1 || 1);
+    const x = (i) => pad + i*xStep;
+    const y = (val) => {
+      if (max === min) return top + chartH/2;
+      const t = (val - min) / (max - min);
+      return (top + chartH) - t*chartH;
+    };
+    const pts = values.map((v,i) => `${x(i).toFixed(1)},${y(v).toFixed(1)}`).join(' ');
+
+    let inner = `
+      <rect x="0" y="0" width="${w}" height="${h}" rx="12" fill="var(--bg-primary)" stroke="var(--border-subtle)"/>
+    `;
+    // grid
+    const gridCount = 4;
+    for (let i=0;i<=gridCount;i++) {
+      const yy = top + (chartH/gridCount)*i;
+      inner += `<line x1="${pad}" y1="${yy}" x2="${w-pad}" y2="${yy}" stroke="var(--border-subtle)" stroke-width="1" />`;
+    }
+    // target line
+    inner += `<line x1="${pad}" y1="${y(targetValue)}" x2="${w-pad}" y2="${y(targetValue)}" stroke="var(--dv-highlight)" stroke-width="2" stroke-dasharray="6 6" opacity="0.8" />`;
+    inner += `<text x="${w-pad}" y="${y(targetValue)-6}" text-anchor="end" font-size="12" fill="var(--text-muted)" font-family="var(--font-mono)">Target ${targetValue}</text>`;
+
+    // series
+    inner += `<polyline points="${pts}" fill="none" stroke="var(--dv-neutral-1)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>`;
+    values.forEach((v,i) => {
+      inner += `<circle cx="${x(i)}" cy="${y(v)}" r="3" fill="${i === values.length-1 ? 'var(--dv-highlight)' : 'var(--dv-neutral-1)'}" />`;
+      if (i === 0 || i === values.length-1) {
+        inner += `<text x="${x(i)}" y="${h-12}" text-anchor="middle" font-size="12" fill="var(--text-muted)" font-family="var(--font-heading)">${escapeHtml(labels[i])}</text>`;
+      }
+    });
+
+    document.getElementById(containerId).innerHTML = svgEl(w,h,inner);
+  }
+
+  function donut(containerId, parts, centerLabel) {
+    // parts = [{label, value, color}...]
+    const w = 320, h = 240;
+    const cx = 160, cy = 120;
+    const rOuter = 76, rInner = 46;
+    const total = parts.reduce((s,p)=>s+p.value,0) || 1;
+    let start = -Math.PI/2;
+
+    function arcPath(startA, endA) {
+      const x1 = cx + rOuter*Math.cos(startA);
+      const y1 = cy + rOuter*Math.sin(startA);
+      const x2 = cx + rOuter*Math.cos(endA);
+      const y2 = cy + rOuter*Math.sin(endA);
+      const large = (endA - startA) > Math.PI ? 1 : 0;
+
+      const xi1 = cx + rInner*Math.cos(endA);
+      const yi1 = cy + rInner*Math.sin(endA);
+      const xi2 = cx + rInner*Math.cos(startA);
+      const yi2 = cy + rInner*Math.sin(startA);
+
+      return `
+        M ${x1} ${y1}
+        A ${rOuter} ${rOuter} 0 ${large} 1 ${x2} ${y2}
+        L ${xi1} ${yi1}
+        A ${rInner} ${rInner} 0 ${large} 0 ${xi2} ${yi2}
+        Z
+      `;
+    }
+
+    let inner = `
+      <rect x="0" y="0" width="${w}" height="${h}" rx="12" fill="var(--bg-primary)" stroke="var(--border-subtle)"/>
+    `;
+
+    parts.forEach(p => {
+      const angle = (p.value/total) * Math.PI*2;
+      const end = start + angle;
+      inner += `<path d="${arcPath(start,end)}" fill="${p.color}" />`;
+      start = end;
+    });
+
+    inner += `<circle cx="${cx}" cy="${cy}" r="${rInner-2}" fill="var(--bg-primary)" stroke="var(--border-subtle)"/>`;
+    inner += `<text x="${cx}" y="${cy-4}" text-anchor="middle" font-family="var(--font-heading)" font-weight="700" font-size="16" fill="var(--text-primary)">${escapeHtml(centerLabel)}</text>`;
+    inner += `<text x="${cx}" y="${cy+16}" text-anchor="middle" font-family="var(--font-body)" font-size="12" fill="var(--text-muted)">Channel mix</text>`;
+
+    document.getElementById(containerId).innerHTML = svgEl(w,h,inner);
+  }
+
+  function riskMatrix(containerId) {
+    const w = 360, h = 240;
+    const pad = 26;
+    const gridSize = 3;
+    const cell = Math.floor((Math.min(w,h) - pad*2) / gridSize);
+    const x0 = pad + 40;
+    const y0 = pad + 10;
+    const cw = cell, ch = cell;
+
+    const colors = [
+      'rgba(247,247,250,1.0)',
+      'rgba(140,75,255,0.10)',
+      'rgba(255,204,0,0.12)'
+    ];
+
+    let inner = `
+      <rect x="0" y="0" width="${w}" height="${h}" rx="12" fill="var(--bg-primary)" stroke="var(--border-subtle)"/>
+      <text x="${x0}" y="${y0-10}" font-family="var(--font-heading)" font-size="12" fill="var(--text-muted)">Impact →</text>
+      <text x="${x0-32}" y="${y0 + ch*1.7}" font-family="var(--font-heading)" font-size="12" fill="var(--text-muted)" transform="rotate(-90 ${x0-32} ${y0 + ch*1.7})">Likelihood →</text>
+    `;
+
+    for (let r=0;r<gridSize;r++) {
+      for (let c=0;c<gridSize;c++) {
+        const x = x0 + c*cw;
+        const y = y0 + r*ch;
+        const heat = Math.min(2, Math.floor((r+c)/2));
+        inner += `<rect x="${x}" y="${y}" width="${cw-2}" height="${ch-2}" fill="${colors[heat]}" stroke="var(--border-subtle)"/>`;
+        inner += `<text x="${x + cw/2}" y="${y + ch/2 + 4}" text-anchor="middle" font-family="var(--font-mono)" font-size="12" fill="var(--text-muted)">${r+1},${c+1}</text>`;
+      }
+    }
+    document.getElementById(containerId).innerHTML = svgEl(w,h,inner);
+  }
+
+  // Render charts
+  barVertical('barVertical', ['Q1','Q2','Q3','Q4'], [6, 9, 11, 12], 3);
+  lineChart('lineChart', ['Jan','Feb','Mar','Apr','May','Jun','Jul'], [12, 14, 13, 16, 18, 19, 21], 20);
+  donut('donutChart', [
+    {label:'Twitch', value: 45, color:'var(--dv-highlight)'},
+    {label:'YouTube', value: 30, color:'var(--dv-muted-1)'},
+    {label:'TikTok', value: 15, color:'var(--dv-muted-2)'},
+    {label:'Email', value: 10, color:'var(--dv-neutral-2)'}
+  ], 'Twitch');
+  riskMatrix('riskMatrix');
+
+  // ---------- Widgets ----------
+  // Timeline
+  function timeline(containerId) {
+    const milestones = [
+      {q:'Q1', txt:'Launch: Hero + creators'},
+      {q:'Q2', txt:'Campus + bundles'},
+      {q:'Q3', txt:'Back-to-school push'},
+      {q:'Q4', txt:'Holiday & upgrades'}
+    ];
+    const wrap = document.createElement('div');
+    wrap.style.display = 'grid';
+    wrap.style.gap = '12px';
+
+    // line
+    const line = document.createElement('div');
+    line.style.position = 'relative';
+    line.style.padding = '18px 12px 10px 12px';
+    line.style.border = 'var(--border-hairline)';
+    line.style.borderRadius = '14px';
+    line.style.background = 'var(--bg-primary)';
+
+    const row = document.createElement('div');
+    row.style.display = 'grid';
+    row.style.gridTemplateColumns = 'repeat(4, 1fr)';
+    row.style.gap = '10px';
+
+    milestones.forEach((m, i) => {
+      const cell = document.createElement('div');
+      cell.style.padding = '10px 10px 12px 10px';
+      cell.style.borderRadius = '12px';
+      cell.style.border = '1px solid var(--border-subtle)';
+      cell.style.background = 'var(--bg-alt)';
+
+      cell.innerHTML = `
+        <div class="label">${escapeHtml(m.q)}</div>
+        <div class="body-sm" style="margin-top:6px;">${escapeHtml(m.txt)}</div>
+      `;
+      row.appendChild(cell);
+    });
+
+    const dots = document.createElement('div');
+    dots.style.position = 'absolute';
+    dots.style.left = '18px';
+    dots.style.right = '18px';
+    dots.style.top = '12px';
+    dots.style.height = '2px';
+    dots.style.background = 'var(--border-strong)';
+    dots.style.opacity = '0.0';
+
+    line.appendChild(row);
+    wrap.appendChild(line);
+    document.getElementById(containerId).appendChild(wrap);
+  }
+  timeline('timeline');
+
+  // Pill row
+  const pillRow = document.getElementById('pillRow');
+  const pills = [
+    {k:'ROAS', v:'3.2x'},
+    {k:'CTR', v:'1.8%'},
+    {k:'VTR', v:'29%'},
+    {k:'CPA', v:'$18'}
+  ];
+  pillRow.innerHTML = `
+    <div style="display:flex; gap:8px; flex-wrap:wrap;">
+      ${pills.map(p => `
+        <div style="border-radius:999px;border:var(--border-hairline);background:var(--bg-alt);padding:8px 12px;display:flex;gap:10px;align-items:baseline;">
+          <span class="label" style="margin:0;">${escapeHtml(p.k)}</span>
+          <span style="font-family:var(--font-heading);font-weight:700;">${escapeHtml(p.v)}</span>
+        </div>
+      `).join('')}
+    </div>
+  `;
+
+  // Channel map SVG
+  function channelMap(containerId) {
+    const w = 760, h = 220;
+    const nodes = [
+      {id:'A', label:'Awareness', x: 60, y: 70},
+      {id:'C', label:'Consideration', x: 300, y: 70},
+      {id:'V', label:'Conversion', x: 540, y: 70},
+      {id:'L', label:'Loyalty', x: 680, y: 140}
+    ];
+    const edges = [
+      ['A','C'],
+      ['C','V'],
+      ['V','L']
+    ];
+    const nodeW = 170, nodeH = 56;
+
+    const nodeById = Object.fromEntries(nodes.map(n => [n.id, n]));
+
+    let inner = `
+      <rect x="0" y="0" width="${w}" height="${h}" rx="16" fill="var(--bg-alt)" stroke="var(--border-subtle)"/>
+    `;
+
+    // connectors
+    edges.forEach(([a,b], i) => {
+      const n1 = nodeById[a], n2 = nodeById[b];
+      const x1 = n1.x + nodeW;
+      const y1 = n1.y + nodeH/2;
+      const x2 = n2.x;
+      const y2 = n2.y + nodeH/2;
+      const mx = (x1+x2)/2;
+      inner += `<path d="M ${x1} ${y1} C ${mx} ${y1}, ${mx} ${y2}, ${x2} ${y2}" fill="none" stroke="var(--dv-muted-1)" stroke-width="2" />`;
+    });
+
+    // nodes
+    nodes.forEach((n, i) => {
+      const isHighlight = n.id === 'V';
+      inner += `
+        <rect x="${n.x}" y="${n.y}" width="${nodeW}" height="${nodeH}" rx="14"
+              fill="var(--bg-primary)" stroke="${isHighlight ? 'var(--dv-highlight)' : 'var(--border-subtle)'}" stroke-width="${isHighlight ? 2 : 1}"/>
+        <text x="${n.x + 16}" y="${n.y + 24}" font-family="var(--font-heading)" font-weight="700" font-size="14" fill="var(--text-primary)">${escapeHtml(n.label)}</text>
+        <text x="${n.x + 16}" y="${n.y + 44}" font-family="var(--font-body)" font-size="12" fill="var(--text-muted)">${isHighlight ? 'Shop / bundle CTA' : 'Content + proof'}</text>
+      `;
+    });
+
+    document.getElementById(containerId).innerHTML = svgEl(w,h,inner);
+  }
+  channelMap('channelMap');
+
+  // ---------- Layout mocks ----------
+  const layoutMocks = document.getElementById('layoutMocks');
+
+  function layoutCard(title, subtitle, innerHtml) {
+    const wrap = document.createElement('div');
+    wrap.className = 'mock';
+    wrap.innerHTML = `
+      <div class="mock-top"></div>
+      <div class="mock-body">
+        <div class="label">${escapeHtml(title)}</div>
+        <div class="caption" style="margin-top:4px;">${escapeHtml(subtitle)}</div>
+        <div style="margin-top:12px;">${innerHtml}</div>
+      </div>
+    `;
+    return wrap;
+  }
+
+  layoutMocks.appendChild(layoutCard('Slide: Title', 'Big left title + right visual', `
+    <div style="display:grid; grid-template-columns: 1.2fr 0.8fr; gap:12px;">
+      <div class="card" style="box-shadow: var(--shadow-0); padding: 12px;">
+        <div class="label">Title</div>
+        <div class="h3" style="margin-top:6px;">Join the Light</div>
+        <div class="body-sm muted" style="margin-top:6px;">Subtitle line goes here</div>
+      </div>
+      <div style="border-radius: 14px; border: var(--border-hairline); background: linear-gradient(var(--grad-angle), var(--grad-stop-1), var(--grad-stop-2), var(--grad-stop-3));"></div>
+    </div>
+  `));
+
+  layoutMocks.appendChild(layoutCard('Slide: Content', 'Left text + right chart', `
+    <div style="display:grid; grid-template-columns: 1fr 1fr; gap:12px;">
+      <div class="card" style="box-shadow: var(--shadow-0); padding: 12px;">
+        <div class="label">Bullets</div>
+        <ul class="body-sm muted" style="margin: 8px 0 0 18px;">
+          <li>Keep to 3–5 bullets</li>
+          <li>Use bold numbers</li>
+          <li>One highlight</li>
+        </ul>
+      </div>
+      <div class="chart-card" style="padding:12px;">
+        <div class="label">Chart</div>
+        <div style="height: 90px; border-radius: 12px; border: var(--border-hairline); background: rgba(255,204,0,0.12); margin-top: 10px;"></div>
+      </div>
+    </div>
+  `));
+
+  layoutMocks.appendChild(layoutCard('Email', 'Centered logo + single CTA', `
+    <div style="border-radius: 14px; border: var(--border-hairline); background: var(--bg-alt); padding: 10px;">
+      <div style="border-radius: 14px; background: var(--bg-primary); border: var(--border-hairline); padding: 12px;">
+        <div class="label" style="text-align:center;">CORSAIR</div>
+        <div class="h4" style="text-align:center; margin-top:8px;">Join the Light</div>
+        <div class="body-sm muted" style="text-align:center; margin-top:6px;">Short copy. Clear CTA.</div>
+        <div style="display:flex; justify-content:center; margin-top:10px;">
+          <span class="btn btn-primary" role="button">Shop bundles</span>
+        </div>
+      </div>
+    </div>
+  `));
+
+  layoutMocks.appendChild(layoutCard('Dashboard', 'KPI row + chart grid', `
+    <div style="display:grid; gap:10px;">
+      <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap:10px;">
+        <div class="card" style="box-shadow: var(--shadow-0); padding: 10px;"><div class="label">KPI</div><div style="font-family:var(--font-heading);font-weight:800;">3.2x</div></div>
+        <div class="card" style="box-shadow: var(--shadow-0); padding: 10px;"><div class="label">KPI</div><div style="font-family:var(--font-heading);font-weight:800;">1.8%</div></div>
+        <div class="card" style="box-shadow: var(--shadow-0); padding: 10px;"><div class="label">KPI</div><div style="font-family:var(--font-heading);font-weight:800;">$18</div></div>
+      </div>
+      <div style="display:grid; grid-template-columns: 1fr 1fr; gap:10px;">
+        <div style="height: 80px; border-radius: 12px; border: var(--border-hairline); background: var(--bg-primary);"></div>
+        <div style="height: 80px; border-radius: 12px; border: var(--border-hairline); background: var(--bg-primary);"></div>
+      </div>
+    </div>
+  `));
+
+  // ---------- Accessibility: contrast checker ----------
+  function hexToRgb(hex) {
+    const m = (hex || '').replace('#','').trim();
+    if (m.length !== 6) return [0,0,0];
+    const r = parseInt(m.slice(0,2),16);
+    const g = parseInt(m.slice(2,4),16);
+    const b = parseInt(m.slice(4,6),16);
+    return [r,g,b];
+  }
+  function lin(c) {
+    const cs = c/255;
+    return cs <= 0.03928 ? cs/12.92 : Math.pow((cs+0.055)/1.055, 2.4);
+  }
+  function luminance([r,g,b]) {
+    return 0.2126*lin(r) + 0.7152*lin(g) + 0.0722*lin(b);
+  }
+  function contrastRatio(fg, bg) {
+    const L1 = luminance(hexToRgb(fg));
+    const L2 = luminance(hexToRgb(bg));
+    const light = Math.max(L1, L2);
+    const dark = Math.min(L1, L2);
+    return (light + 0.05) / (dark + 0.05);
+  }
+
+  const textColor = document.getElementById('textColor');
+  const bgColor = document.getElementById('bgColor');
+  const sample = document.getElementById('contrastSample');
+  const pill = document.getElementById('contrastPill');
+  const ratioText = document.getElementById('contrastRatioText');
+
+  const targetBody = v.accessibility.body_text_min_contrast_ratio;
+  const targetSmall = v.accessibility.small_text_min_contrast_ratio;
+
+  function updateContrast() {
+    const fg = textColor.value;
+    const bg = bgColor.value;
+    sample.style.color = fg;
+    sample.style.background = bg;
+    const ratio = contrastRatio(fg,bg);
+    ratioText.textContent = `Ratio: ${ratio.toFixed(2)}`;
+    const passBody = ratio >= targetBody;
+    const passSmall = ratio >= targetSmall;
+
+    pill.classList.remove('pass','fail');
+    pill.classList.add(passSmall ? 'pass' : 'fail');
+    pill.textContent = passBody ? 'Pass (Body)' : (passSmall ? 'Pass (Small only)' : 'Fail');
+  }
+
+  textColor.addEventListener('input', updateContrast);
+  bgColor.addEventListener('input', updateContrast);
+
+  document.getElementById('presetPrimaryOnWhite').addEventListener('click', () => {
+    textColor.value = v.foundations.color.text.primary;
+    bgColor.value = v.foundations.color.backgrounds.primary;
+    updateContrast();
+  });
+  document.getElementById('presetMutedOnAlt').addEventListener('click', () => {
+    textColor.value = v.foundations.color.text.muted;
+    bgColor.value = v.foundations.color.backgrounds.alternate;
+    updateContrast();
+  });
+  document.getElementById('presetWhiteOnYellow').addEventListener('click', () => {
+    textColor.value = '#FFFFFF';
+    bgColor.value = v.foundations.color.accent.corsair_yellow;
+    updateContrast();
+  });
+  updateContrast();
+
+  // ---------- Raw JSON page ----------
+  document.getElementById('jsonBlock').textContent = JSON.stringify(kit, null, 2);
+
+  // ---------- Helpers ----------
+  function escapeHtml(str) {
+    return String(str)
+      .replaceAll('&','&amp;')
+      .replaceAll('<','&lt;')
+      .replaceAll('>','&gt;')
+      .replaceAll('"','&quot;')
+      .replaceAll("'","&#039;");
+  }
+})();
+</script>
+
+</body>
+</html>
